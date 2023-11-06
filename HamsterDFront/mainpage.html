@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link rel="stylesheet" href="../practice1/css/style1.css" />
+  </head>
+  <body>
+    <div class="main-page">
+      <!-- 화면 상단(로고, 메뉴) -->
+      <div class="header-section">
+        <!-- 로고영역 -->
+        <div class="header" id="logo">
+          <img class="logoimg" src="resources/HD_logo.png" />
+        </div>
+        <!-- 메뉴 -->
+        <div class="header">
+          <div class="menu" id="mypage">
+            <div class="submenu1"><a href="#">마이 페이지</a></div>
+            <div class="submenu2">
+              <a href="#">마이페이지</a>
+              <a href="#">개인정보수정</a>
+              <a href="#">탈퇴</a>
+            </div>
+          </div>
+
+          <div class="menu" id="board">
+            <div class="submenu1"><a href="#">게시판</a></div>
+            <div class="submenu2">
+              <a href="#">서브메뉴 1</a>
+              <a href="#">서브메뉴 2</a>
+              <a href="#">서브메뉴 3</a>
+            </div>
+          </div>
+
+          <div class="menu" id="studygroup">
+            <div class="submenu1"><a href="#">스터디</a></div>
+            <div class="submenu2">
+              <a href="#">랭킹</a>
+              <a href="#">스터디그룹 조회</a>
+              <a href="#">스터디 만들기</a>
+            </div>
+          </div>
+
+          <div class="menu" id="social">
+            <div class="submenu1"><a href="#">소셜</a></div>
+            <div class="submenu2">
+              <a href="#">서브메뉴 1</a>
+              <a href="#">서브메뉴 2</a>
+              <a href="#">서브메뉴 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 메인페이지 -->
+      <div class="main-section">
+        <!-- 왼쪽 메뉴(유저 랭킹) -->
+        <div class="section" id="section1">
+          <div class="section" id="rank-head">
+            <div id="ranking">랭킹</div>
+            <svg
+              class="ranking-icon"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9 13C7.9 13 7 13.9 7 15C7 16.1 7.9 17 9 17C10.1 17 11 16.1 11 15C11 13.9 10.1 13 9 13ZM21 13C19.9 13 19 13.9 19 15C19 16.1 19.9 17 21 17C22.1 17 23 16.1 23 15C23 13.9 22.1 13 21 13ZM15 13C13.9 13 13 13.9 13 15C13 16.1 13.9 17 15 17C16.1 17 17 16.1 17 15C17 13.9 16.1 13 15 13Z"
+                fill="#C3CAD9"
+              />
+            </svg>
+          </div>
+
+          <!-- 유저 랭킹(몸무게 순으로 유저정보 받아와야 함)-->
+          <div class="section" id="rank">
+            <div class="user-rank" id="user1">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user1</div>
+            </div>
+            <div class="user-rank" id="user2">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid2">user2</div>
+            </div>
+            <div class="user-rank" id="user3">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid3">user3</div>
+            </div>
+            <div class="user-rank" id="user4">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user4</div>
+            </div>
+            <div class="user-rank" id="user5">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user5</div>
+            </div>
+            <div class="user-rank" id="user6">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user6</div>
+            </div>
+            <div class="user-rank" id="user7">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user7</div>
+            </div>
+            <div class="user-rank" id="user8">
+              <img src="resources/person.png" />
+              <div class="user-rank" id="userid1">user8</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 메인페이지(컨텐츠 부분) -->
+        <div class="section" id="section2">
+          <div class="searchsection">
+            <form id="section2-search">
+              <input
+                type="text"
+                id="search"
+                placeholder="검색어를 입력하세요."
+              />
+              <button><img src="resources/search.png" /></button>
+            </form>
+          </div>
+
+          <div class="news-section" id="news">
+            <div class="news1">
+              <div class="news-top" id="news-top2">
+                <div class="news1-content1">인기글1</div>
+                <div class="news1-content2">
+                  <div class="like">
+                    <img src="resources/like.png" />
+                    <div id="like-count">55</div>
+                  </div>
+                  <div class="comment">
+                    <img src="resources/comment.png" />
+                    <div id="comment-count">37</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-top" id="news-top2">
+                <div class="news1-content1">인기글2</div>
+                <div class="news1-content2">
+                  <div class="like">
+                    <img src="resources/like.png" />
+                    <div id="like-count">38</div>
+                  </div>
+                  <div class="comment">
+                    <img src="resources/comment.png" />
+                    <div id="comment-count">17</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-top" id="news-top2">
+                <div class="news1-content1">인기글3</div>
+                <div class="news1-content2">
+                  <div class="like">
+                    <img src="resources/like.png" />
+                    <div id="like-count">19</div>
+                  </div>
+                  <div class="comment">
+                    <img src="resources/comment.png" />
+                    <div id="comment-count">11</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="news2">
+              <div>최신글1</div>
+              <div>최신글2</div>
+              <div>최신글3</div>
+              <div>최신글4</div>
+              <div>최신글5</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 오른쪽 메뉴 -->
+        <div class="section" id="section3">
+          <div class="myimg">
+            <img src="resources/로고안경2.png" />
+          </div>
+          <div class="myinfo">
+            <div class="mystudy">내 스터디</div>
+            <div class="myweight">내 몸무게</div>
+            <div class="mycalender">내 일정</div>
+            <div class="mypost">내 게시글</div>
+            <div class="mycomment">내 댓글</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
